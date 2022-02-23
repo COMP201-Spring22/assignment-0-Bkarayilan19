@@ -1,4 +1,4 @@
-#include "mylibrary.h"
+include "mylibrary.h"
 
 int fibonacci(int n)
 {
@@ -28,7 +28,7 @@ int min_of_numbers(int *array, int count)
 
 	return min;
 }
-
+i
 int reflected_number(int number)
 {
 
@@ -49,5 +49,3 @@ char digit2char(int digit)
 	//Note: There exists one-line solution.
 	return ' ';
 }
-
-

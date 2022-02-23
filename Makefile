@@ -29,7 +29,7 @@ OBJECTS := $(SOURCES:.c=.o)
 
 # These are default variables in make, but it is traditional to overwrite them.
 CC=gcc
-CFLAGS= -w
+CFLAGS= -w -std=c99
 LD=gcc
 LDFLAGS=
 
