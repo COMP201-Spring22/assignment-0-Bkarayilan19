@@ -46,7 +46,7 @@ int min_of_numbers(int *array, int count)
 {
 	
   //TODO: return the minimum number in the array (count is the size of the array)
-  
+  //at the begging I set the min value to first element of array then in the while loop ı compare every element of array with min value if there is a smaller value I change it to min value  
   int min = array[0];
   int i=0;
   
