@@ -26,12 +26,21 @@ int fibonacci(int n)
 
 int mean_of_numbers(int *array, int count)
 {
-	int mean = 0;
-
-	//TODO: return the mean (average) of the numbers in the array (count is the size of the array)
-
-	return mean;
+	
+  //TODO: return the mean (average) of the numbers in the array (count is the size of the array)
+  //in while loop it start from 0. index and stop at until last index and add them together after that divide it to number of element so it gives mean of the array. 
+  
+  int mean = 0;
+  int i=0;
+  
+  while(i<count){
+    mean+=array[i];
+    i++;
+  }
+  mean/=count;
+  return mean;
 }
+
 
 int min_of_numbers(int *array, int count)
 {
