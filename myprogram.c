@@ -59,17 +59,41 @@ int min_of_numbers(int *array, int count)
   return min;
 }
 
-
 int reflected_number(int number)
 {
 
-	int reflected = number;
 
-	//TODO: calculate the reflected number as in the following examples
-	// if the input is 123, return 123321
-	// if the input is 97, return 9779
+  int reflected = number;
+  int result=number;
 
-	return reflected;
+  //TODO: calculate the reflected number as in the following examples
+  // if the input is 123, return 123321
+  // if the input is 97, return 9779
+  //firstly I calculate the length of the number secondly,I multiplyed the first number with 10**(number of the length) finally with arithmetic operator I create the reflected number.
+  int copy =number;
+  int lenOfNumber =0;
+  while(copy>0){
+  copy/=10;
+  lenOfNumber++;
+      
+  }
+  int cc =lenOfNumber;
+  int next=1;
+  while(cc>0){
+  result*=10;
+  next*=10;
+  cc--;
+  }
+  next/=10;
+  while(reflected>0){
+  int current=reflected%10;
+  result+=current*next;
+  next/=10;
+  reflected/=10;
+  }
+  reflected=result;
+  return reflected;
+  
 }
 
 
