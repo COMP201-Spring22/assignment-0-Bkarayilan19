@@ -99,8 +99,10 @@ int reflected_number(int number)
 
 char digit2char(int digit)
 {
-	//TODO: convert a given integer digit (0, 1, 2, ..., 9) 
-	//      to the corresponding character ('0', '1', '2', ..., '9')
-	//Note: There exists one-line solution.
-	return ' ';
+  //TODO: convert a given integer digit (0, 1, 2, ..., 9) 
+  // to the corresponding character ('0', '1', '2', ..., '9')
+  //Note: There exists one-line solution.
+  char result=digit+'0';
+  return result;
 }
+
