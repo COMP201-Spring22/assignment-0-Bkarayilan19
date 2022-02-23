@@ -45,12 +45,20 @@ int mean_of_numbers(int *array, int count)
 int min_of_numbers(int *array, int count)
 {
 	
-	int min = array[0];
-
-	//TODO: return the minimum number in the array (count is the size of the array)
-
-	return min;
+  //TODO: return the minimum number in the array (count is the size of the array)
+  
+  int min = array[0];
+  int i=0;
+  
+  while(i<count){
+    if(array[i]<min){
+      min= array[i];
+    }
+    i++;
+  }
+  return min;
 }
+
 
 int reflected_number(int number)
 {
