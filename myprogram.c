@@ -1,14 +1,28 @@
-include "mylibrary.h"
+#include "mylibrary.h"
+
 
 int fibonacci(int n)
-{
-	int result = 0;
+{ 
+  //TODO: return n-th Fibonacci number: f(0) = 0, f(1) = 1, f(n) = f(n-1) + f(n-2)
+  //SEE: https://en.wikipedia.org/wiki/Fibonacci_number
 
-	//TODO: return n-th Fibonacci number: f(0) = 0, f(1) = 1, f(n) = f(n-1) + f(n-2)
-	//SEE: https://en.wikipedia.org/wiki/Fibonacci_number
+  //I created an array and ı put first two element then my while loop start to put fibonacci numbers to array until that number came, and the method return the result
 
-	return result;
+  int result=0;
+  
+  int i =2;
+  int fibonacci[n+1];
+  fibonacci[0]=0;
+  fibonacci[1]=1;
+  
+  while(i<=n){
+    fibonacci[i]=fibonacci[i-1]+fibonacci[i-2];
+    i++;
+  }
+  result=fibonacci[n];
+  return result;
 }
+
 
 int mean_of_numbers(int *array, int count)
 {
