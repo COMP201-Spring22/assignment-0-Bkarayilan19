@@ -42,7 +42,7 @@ int min_of_numbers(int *array, int count)
 
 	return min;
 }
-i
+
 int reflected_number(int number)
 {
 
